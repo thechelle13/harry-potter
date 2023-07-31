@@ -12,15 +12,11 @@
 
 export const PotteryList = () => {
     let htmlString = ``
-    for (const pot of pottery) {
-        htmlString += `<section class="pottery"         id="pottery--1">`
-
+    for (const pot of storedPottery) {
+        htmlString += `<section class="pottery"id="pottery--1">`
         htmlString += `<h2 class="pottery__shape">Mug</h2>`
-
         htmlString += `<div class="pottery__properties">Item weighs 3 grams and is 6 cm in height</div>`
-
         htmlString += `<div class="pottery__price">Price is $20</div>`
-
         htmlString += `</section>`
     }
     return htmlString

@@ -10,13 +10,16 @@
 // height
 // id (increment this value each time the function is invoked)
 
-
-
+let potteryId = 0;
 export const makePottery = (shape, weight, height) => {
-    let newClay = []
-
-    newClay.shape = "Bowl"
-
-    return newClay
-
+    potteryId++;
+    // let newClay = []
+    // newClay.shape = "Bowl"
+    //return newClay
+    return {
+        shape: shape, 
+        weight: weight, 
+        height: height, 
+        id: potteryId
+    }
 }
