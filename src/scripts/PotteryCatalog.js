@@ -10,17 +10,20 @@
 
 const storedPottery = []
 
-export const toSellOrNotToSell = (storedPottery) => {
-    const readyToSell = []
+export const toSellOrNotToSell = (pot) => {
+    //const readyToSell = []
     for (const pot of storedPottery) {
-        //if weight
-    } 
-    // if 
-        // also if cracked
-    return readyToSell
+        return pot
+        } if (pot.weight >= 6) {
+            pot.price = 40
+        } else {
+            pot.price = 20
+        }
+    storedPottery.push(pot)
+    return pot
 }
 
+
 export const usePottery = () => {
-    // array is array
-    //return
+    return storedPottery
 }

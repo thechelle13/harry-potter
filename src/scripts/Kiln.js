@@ -11,11 +11,11 @@
 
 export const firePottery = (temperature) => {
     let newClay = []
-        if (temperature < 2200) {
-            newClay.cracked = true
+        if (temperature > 2200) {
+            newClay.cracked = false
             }
             else {
-            newClay.cracked = false
+            newClay.cracked = true
             } 
     return newClay
 }
